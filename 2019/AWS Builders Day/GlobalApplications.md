@@ -54,4 +54,13 @@ Failover routing will always send traffic to the primary node, unless thre is a 
 ## AWS Global Accelerator
 Improves global application availability and performace. Dramatically reduces the number of hops the client has to make before reaching any part of the AWS infrastrucutre. Using Anycast, the traffic can go straight from the ISP's network direct to the AWS network
 
+
 ![global dynamo setup](global_dynamo.jpg)
+
+## DNS vs Global Accelerator
+DNS uses hard to control or enforce caches
+
+DNS gives you much more routing options though. Geo and weighted routing etc
+
+It's possibly to use DNS and Anycast IP's together
+
